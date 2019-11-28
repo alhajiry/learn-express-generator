@@ -3,15 +3,15 @@ let users = require('../../models/users')
 module.exports = {
 
     retrieveUser: (req, res) => {
-        const { name, email } = req.body
+        // const { name, email } = req.body
         
-        return res.status(200).json({
-            message: 'user retrieved succesfully',
-            name,
-            email,
-            password : '*******'
-        })
-        // return res.status(200).send(users)
+        // return res.status(200).json({
+        //     message: 'user retrieved succesfully',
+        //     name,
+        //     email,
+        //     password : '*******'
+        // })
+        return res.status(200).send(users)
     },
 
 
